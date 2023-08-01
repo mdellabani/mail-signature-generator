@@ -2,7 +2,11 @@
   "compilerOptions": {
       /* Language and Environment */
     "target": "es2016",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
-    // "lib": [],                                        /* Specify a set of bundled library declaration files that describe the target runtime environment. */
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],                                           /* Specify a set of bundled library declaration files that describe the target runtime environment. */
     "jsx": "preserve",                                   /* Specify what JSX code is generated. */
 
     /* Modules */
@@ -49,5 +53,11 @@
           /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
-  }
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
