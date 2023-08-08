@@ -3,12 +3,18 @@ import React, {useState} from 'react';
 
 export function General() {
   return (
-    <div>
+    <div className="flex flex-col gap-4 p-4">
       General
       {/* label todo */}
       {generalData.map(data => (
-        <div key={data}>
-          <input type="text" placeholder={data}></input>
+        <div key={data} className="input">
+          <label className="input-label">{data}</label>
+          <input
+            // className="border-solid border-2 border-gray-500 hover:border-black focus:border-black rounded-full pl-[14px]"
+            className="input-item"
+            type="text"
+            placeholder={data}
+          ></input>
         </div>
       ))}
     </div>
