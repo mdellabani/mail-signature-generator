@@ -12,6 +12,7 @@ function App() {
   const [state, setState] = useState<State>(initialState);
   const [optionalState, setOptionalState] =
     useState<OptionalState>(initialOptionalState);
+  const [showOptional, setShowOptional] = useState(false);
 
   return (
     <div className="App">
@@ -20,8 +21,10 @@ function App() {
           <Form
             state={state}
             optionalState={optionalState}
+            showOptional={showOptional}
             setState={setState}
             setOptionalState={setOptionalState}
+            setShowOptional={setShowOptional}
           />
         </div>
         <div className="w-full md:w-1/2 p-4">
