@@ -2,7 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-.remove-icon {
+/* .remove-icon {
     cursor: pointer;
     color: red;
     font-size: 16px;
@@ -58,6 +58,6 @@ input:focus::placeholder {
 
 .input:focus-within .input-label {
   display:  block !important;
-}
+} */
 
   
