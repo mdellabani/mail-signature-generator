@@ -1,0 +1,16 @@
+.wrapper {
+ padding: 10px;
+}
+
+.form-input {
+ font-size: 1em; /* This sets the input field's font size relative to the body font size */
+ padding: 1em; /* This sets the input field's padding relative to the body font size */
+ width: calc(100% - 2em); /* Adjust the width to account for the padding */
+}
+
+@media (min-width: 600px) {
+ .form-input {
+   font-size: 1.5rem; /* On screens wider than 600px, increase the font size */
+   width: calc(100% - 3rem); /* Adjust the width to account for the padding */
+ }
+}

@@ -7,6 +7,7 @@ import {
   initialOptionalState,
   initialState,
 } from './types';
+import './App.css';
 
 function App() {
   const [state, setState] = useState<State>(initialState);
@@ -15,21 +16,19 @@ function App() {
   const [showOptional, setShowOptional] = useState(false);
 
   return (
-    <div className="App">
-      <div className="flex flex-col md:flex-row items-center justify-between p-4">
-        <div className="w-full md:w-1/2 p-4">
-          <Form
-            state={state}
-            optionalState={optionalState}
-            showOptional={showOptional}
-            setState={setState}
-            setOptionalState={setOptionalState}
-            setShowOptional={setShowOptional}
-          />
-        </div>
-        <div className="w-full md:w-1/2 p-4">
-          <Signature state={state} optionalState={optionalState} />
-        </div>
+    <div className="app">
+      <div className="w-full md:w-1/2 p-4">
+        <Form
+          state={state}
+          optionalState={optionalState}
+          showOptional={showOptional}
+          setState={setState}
+          setOptionalState={setOptionalState}
+          setShowOptional={setShowOptional}
+        />
+      </div>
+      <div className="w-full md:w-1/2 p-4">
+        <Signature state={state} optionalState={optionalState} />
       </div>
     </div>
   );
